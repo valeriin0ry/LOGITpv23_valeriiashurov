@@ -80,3 +80,63 @@ try:
         print("Viga andmetaga")
 except:
     print("On vaja ainult ")
+
+
+#7
+
+#num1 = int(input("Введите первое целое число"))
+#num2 = int(input("Введите второе целое число"))
+#num3 = int(input("Введите третье целое число"))
+#num4 = int(input("Введите четвертое целое число"))
+#num5 = int(input("Введите пятое целое число"))
+
+#average = (num1 + num2 + num3 + num4 + num5) / 5
+#print("Среднее арифметическое число: ", average)
+
+#7 (2 variant)
+
+try: 
+    min_=int(input("Min: "))
+except:
+    print("On vaja täisarv kasutada!")
+try:
+    max_=int(input("Max: "))
+except:
+    print("Viga max_ muutujaga!")
+
+a1=randint(min_,max_)
+a2=randint(min_,max_)
+a3=randint(min_,max_)
+a4=randint(min_,max_)
+a5=randint(min_,max_)
+print("Arvud: {0},{1},{2},{3},{4}. Aritmetiline keskmine on: {5}".format(a1,a2,a3,a4,a5,keskmine))
+
+#8
+
+print("@..@".center(10," "))
+print("(----)".center(10," "))
+print(" \__/ ").center(10," ")
+print('^^ \"\" ^^').center(10," ")
+
+#9
+
+a = int(input("Sisesta esimese külje pikkus: "))
+b = int(input("Sisesta teise külje pikkus: "))
+c = int(input("Sisesta kolmanda külje pikkus: "))
+umbermoot = a + b + c
+print(a+b+c)
+
+#10
+pizza_cost: 12.90
+tip_percentage = 10
+
+num_people = int(input("Kui palju inimesi tellib pitsat: "))
+
+tip_amount = pizza_cost * (tip_percentage / 100)
+total_cost = pizza_cost + tip_amount
+cost_per_person = total_cost / num_people
+
+print("\nPitsa hind: "), pizza_cost, "euro"
+print("tip",tip_percentage, "%): ", "{:.2f}".format(tip_amount),"euro")
+print("kogumaksumus: ", "{:.2f}".format(total_cost), "euro")
+print("\nKõik peavad maksma:", "{:.2f}".format(cost_per_person), "euro")
