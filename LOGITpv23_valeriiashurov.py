@@ -1,6 +1,7 @@
 #3
 from math import *
 from random import *
+from sunau import AUDIO_FILE_ENCODING_ADPCM_G721, AUDIO_FILE_ENCODING_ADPCM_G722
 from xml.etree.ElementTree import PI
 #kokku=randint(1,666)
 #print("Laual peal on",kokku,"kommid. Mitu tahad süüa?")
@@ -60,8 +61,22 @@ from xml.etree.ElementTree import PI
 
 #5
 
-from math import 
+from math import *
 #a=float(input("pikkus: "))
 #b=float(input("laius: "))
 #d=sqrt(a**2+b**2)
-#print("Diagonaal=",d,"m") 
+#print("Diagonaal=",d,"m")
+
+
+
+#6
+try:
+    aeg = float(input("Mitu tundi kulus sõiduks: "))
+    try:
+        teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+        kiirus = teepikkus/aeg 
+        print("Sinu kiirus oli "+str(kiirus) + "km/h")
+    except:
+        print("Viga andmetaga")
+except:
+    print("On vaja ainult ")
