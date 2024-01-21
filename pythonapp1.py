@@ -4,12 +4,12 @@ try:
 
     print(nimi + ", oi kui ilus nimi!")
 
-    vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? (0-ei, 1-jah) > "))
+    vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? "))
 
-    if vastus == 1:
-        pikkus = int(input("Sisesta oma pikkus (cm): "))
-        mass = float(input("Sisesta oma kaal (kg): "))
-        indeks = mass / (0.01 * pikkus) ** 2
+    if vastus == jah:
+        pikkus = int(input("Sisesta oma pikkus: "))
+        massa = float(input("Sisesta oma kaal: "))
+        indeks = massa / (0.01 * pikkus) ** 2
         print(nimi + "! Sinu keha indeks on: " + str(round(indeks, 1)))
 
         if indeks < 16:
@@ -32,7 +32,7 @@ try:
     print("\nKohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
 
 except ValueError:
-    print("Vigane sisend. Palun sisesta korrektne arv.")
+    print("Viga. Palun sisesta arv.")
 
 
 
