@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>5a10725f-86ef-4143-a1a0-bca48978cc8f</ProjectGuid>
+    <ProjectGuid>09ad612a-eb98-425e-92b6-be98e44d8bc6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ruutvõrand.py</StartupFile>
+    <StartupFile>korduslaused.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>pythonapp1</Name>
-    <RootNamespace>pythonapp1</RootNamespace>
+    <Name>korduslaused</Name>
+    <RootNamespace>korduslaused</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,8 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ruutvõrand.py" />
-    <Compile Include="pythonapp1.py" />
+    <Compile Include="korduslaused.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
