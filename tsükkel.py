@@ -80,55 +80,103 @@ from random import *
 
 #1
 
-n = int(input("Sisestage arv vahemikus 1 kuni 9: ")) #numbri sisestamine
+#n = int(input("Sisestage arv vahemikus 1 kuni 9: ")) #numbri sisestamine
 
-if 1 <= n <= 9:  #numbri kontroll
+#if 1 <= n <= 9:  #numbri kontroll
+#    for i in range(n):
+#        print("")
+#        print("   /V\    ")
+#        print("  / V \   ")
+#        print(" / V V \  ")
+#        print("/VV V VV\  ")
+#        print("")
+#else:
+#    print("Arv peab olema vahemikus 1 kuni 9") #veateade, kui number on vale
+
+##2
+
+#R = int(input("Sisestage arv: "))
+#arv = 1 #muutuja määramine
+#for i in range(1, R + 1,2):  #paarituid numbreid 1 kuni R sammuga
+#    arv *= i #arvude korrutis
+#print("Paaritud от 1 до", R,arv) #tulemus
+
+##3 #не знаю как реализовать через цикл
+
+
+##4
+#n = input("Sisestage arv: ")
+#paaris = ("") 
+#paaritud = ("")   #muutujate lisamine
+
+#for arv in n:
+#    if int(arv) % 2 == 0:   #täisarvu test, tagastab jagamise jäägi
+#        paaris += arv + " "
+#    else:
+#        paaritud += arv + " "  #kui number on paaritu
+
+#print(f"Paaris: {paaris}")
+#print(f"Paaritud: {paaritud}")
+
+
+
+##5
+
+#A = int(input("Введите A: "))
+#B = int(input("Введите B: "))
+
+#summa = 0 #muutuja lisamine lahendamiseks tsükli kaudu
+#for i in range(A, B + 1): #lahendus muutuva loendusega tsükli kaudu
+#    summa += i
+#print("Arvude summa on:", summa)
+
+
+#исправление 6 вариант
+
+#1
+n = int(input("Sisestage arv 1 kuni 9: "))
+
+if 1 <= n <= 9:
     for i in range(n):
-        print("")
-        print("   /V\    ")
-        print("  / V \   ")
-        print(" / V V \  ")
-        print("/VV V VV\  ")
-        print("")
+        print("  Ä")
+        print(" / \\")
+        print(" | |")
+    for i in range(3):
+        print(" ", end=" ")
+    print()
 else:
-    print("Arv peab olema vahemikus 1 kuni 9") #veateade, kui number on vale
+    print("Viga")
 
 #2
+M=int(input)
 
-R = int(input("Sisestage arv: "))
-arv = 1 #muutuja määramine
-for i in range(1, R + 1,2):  #paarituid numbreid 1 kuni R sammuga
-    arv *= i #arvude korrutis
-print("Paaritud от 1 до", R,arv) #tulemus
 
-#3 #не знаю как реализовать через цикл
+#3
+M = float(input("Sisestage riide meetris: ")) 
+N = int(input("Sisestage arv: "))  
+for i in range(1, N + 1):
+    tp = float(input(f"Sisesta {i} meetris: "))
+    if tp > M:
+        print("Materjali ei ole piisavalt")
+        break
+    M -= tp
+else:
+    print("Piisavalt kangast materjali")
 
 
 #4
-n = input("Sisestage arv: ")
-paaris = ("") 
-paaritud = ("")   #muutujate lisamine
-
-for arv in n:
-    if int(arv) % 2 == 0:   #täisarvu test, tagastab jagamise jäägi
-        paaris += arv + " "
-    else:
-        paaritud += arv + " "  #kui number on paaritu
-
-print(f"Paaris: {paaris}")
-print(f"Paaritud: {paaritud}")
-
-
+import random
+L = int(input("Sisestage ridade arv: "))
+H = int(input("Sisestage veergude arv: "))
+for i in range(L):
+    for j in range(H):
+        print(random.randint(0, 100), end=" ")  
+    print()
 
 #5
 
-A = int(input("Введите A: "))
-B = int(input("Введите B: "))
 
-summa = 0 #muutuja lisamine lahendamiseks tsükli kaudu
-for i in range(A, B + 1): #lahendus muutuva loendusega tsükli kaudu
-    summa += i
-print("Arvude summa on:", summa)
+
 
 
 
