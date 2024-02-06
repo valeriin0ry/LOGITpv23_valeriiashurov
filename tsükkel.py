@@ -131,53 +131,9 @@ from random import *
 #print("Arvude summa on:", summa)
 
 
-#исправление 6 вариант
+#исправление 18 задача
+from random import *
+N = randint(1, 10)
+M = randint(1, 10)
+print(f"N = {N}, M = {M}, N^2 = {N**2}, M^2 = {M**2}, N^3 = {N**3}, M^3 = {M**3}")
 
-#1
-n = int(input("Sisestage arv 1 kuni 9: "))
-
-if 1 <= n <= 9:
-    for i in range(n):
-        print("  Ä")
-        print(" / \\")
-        print(" | |")
-    for i in range(3):
-        print(" ", end=" ")
-    print()
-else:
-    print("Viga")
-
-#2
-M=int(input)
-
-
-#3
-M = float(input("Sisestage riide meetris: ")) 
-N = int(input("Sisestage arv: "))  
-for i in range(1, N + 1):
-    tp = float(input(f"Sisesta {i} meetris: "))
-    if tp > M:
-        print("Materjali ei ole piisavalt")
-        break
-    M -= tp
-else:
-    print("Piisavalt kangast materjali")
-
-
-#4
-import random
-L = int(input("Sisestage ridade arv: "))
-H = int(input("Sisestage veergude arv: "))
-for i in range(L):
-    for j in range(H):
-        print(random.randint(0, 100), end=" ")  
-    print()
-
-#5
-
-
-
-
-
-
-    
