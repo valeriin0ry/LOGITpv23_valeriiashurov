@@ -1,5 +1,5 @@
 while True:
-    a = input("Выберите действие \n1 - Замена слова \n2 - Умножение строки \n3 - Вывод и оценка длины строки \n4 - Результат двух строк \n5 - Символы строки с их индексами \n6 - Поиск индекса строки \n7 - Поиск индекса символа o \n8 - Вывод символов с 1 по 4 позицию: ")
+    a = input("Выберите действие \n1 - Замена слова \n2 - Умножение строки \n3 - Вывод и оценка длины строки \n4 - Результат двух строк \n5 - Символы строки с их индексами \n6 - Поиск индекса строки \n7 - Поиск индекса символа o \n8 - Вывод символов с 1 по 4 позицию \n9 - Преобразование маленькой буквы в большую - \n10 - Проверка состоит ли строка из букв ")
     if a == "1":
         while True:
             S = input("Sisestage string: ")
@@ -65,14 +65,19 @@ while True:
             substr = S[7:23]
             print("Ekstraheeritud string:", substr)
             break
-
-
-
     elif a =="9":
         c=input("Введите слово или набор букв с маленькой и большой буквы \n")
         ll=a.title(9)
         print(ll)
-    
+    elif a =="10":
+        while True:
+            S = input("Sisestage string: ")
+            if S == "":
+                break
+            if S.isalpha():
+                print("String sisaldab ainult tähti.")
+            else:
+                    print("String sisaldab rohkem kui ainult tähti.")
 
 
 
