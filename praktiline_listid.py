@@ -1,7 +1,7 @@
 #2.3
 from random import *
 vanused=[]
-N=int(input("Mitu elemedi? "))
+N=int(input("Mitu elemendi? "))
 for i in range(N):
     vanus=randint(10,97)
     vanused.append(vanus)
@@ -57,3 +57,36 @@ for nimi in nimed:
 else:
     print(f"{vananimi} ei ole")
 print(nimed)
+
+#3
+from string import *
+from random import *
+while True:
+    sym=input("Mus sümbol kasutame?")
+    if sym in punctuation: 
+        break
+    else:
+        print("Saab kasutada ainult: !#$&%'()*+...")
+while True: 
+    try: 
+        N=int(input("Ridade arv: ")) 
+        break
+    except TypeError:
+        print("Ainult täisarvud")
+for i in range(N):
+    print(randint(1,50)*sym)
+    
+#4 index
+Indeksid=["Tallinn","Narva, Narva-Jõesuu", "Kohtla-Järve","Ida-Virumaa, Lääne-Virumaa, Jõgevamaa","Tartu linn","Tarumaa, Põlvamaa, Võrumaa, Valgamaa","Viljandimaa, Järvamaa, Harjumaa, Raplamaa", "Pärnumaa", "Läänemaa, Hiiumaa, Saaremaa"]
+while True:
+    indeks=input("Indeks: ")
+    if len(indeks)==5 and indeks.isdigit():
+        break
+    else:
+        print("Ainult 5 numbrilime arv saab kontrollida!")
+#0 Tallinn
+print(indeks,"kasutatakse",Indeksid[int(indeks[0])-1],"piirkonnas")
+if int(indeks[0]) in [1,2,3]:
+    pass
+else:
+    pass
