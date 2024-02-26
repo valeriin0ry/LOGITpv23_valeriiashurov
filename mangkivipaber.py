@@ -17,9 +17,7 @@ while True:
            name1_vastus == "бумага" and name2_vastus == "камень":
             print(f"{name1} победил!")
             name1_score += 1
-        elif name1_vastus=="камень" and name2_vastus=="камень" or \
-             name1_vastus=="ножницы" and name2_vastus=="ножницы" or \
-             name1_vastus=="бумага" and name2_vastus=="бумага":
+        elif name1_vastus==name2_vastus:
             print("Ничья, еще разок")
         elif name1_vastus != name2_vastus:
             print(f"{name2} победил!")
