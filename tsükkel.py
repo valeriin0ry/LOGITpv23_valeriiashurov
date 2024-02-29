@@ -135,5 +135,9 @@ from random import *
 from random import *
 N = randint(1, 10)
 M = randint(1, 10)
-print(f"N = {N}, M = {M}, N^2 = {N**2}, M^2 = {M**2}, N^3 = {N**3}, M^3 = {M**3}")
+stepen = [2, 3]
+for i in stepen:
+    ck_N = N ** i
+    ck_M = M ** i
+    print(f"N = {N}, M = {M}, N^{i} = {ck_N}, M^{i} = {ck_M}")
 
