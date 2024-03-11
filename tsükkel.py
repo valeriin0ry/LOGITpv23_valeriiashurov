@@ -137,7 +137,10 @@ N = randint(1, 10)
 M = randint(1, 10)
 stepen = [2, 3]
 for i in stepen:
-    ck_N = N ** i
-    ck_M = M ** i
-    print(f"N = {N}, M = {M}, N^{i} = {ck_N}, M^{i} = {ck_M}")
+    ck_N = 1
+    ck_M = 1
+    for j in range(i):
+        ck_N *= N
+        ck_M *= M
+        print(f"N = {N}, M = {M}, N^{j+1} = {ck_N}, M^{j+1} = {ck_M}")
 
