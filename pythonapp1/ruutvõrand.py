@@ -86,27 +86,29 @@
 
 
     #3
-from math import *
-v=input("Kas tahad 1-7 numbrist saada päeva nimetus?")
-if v.lower()=="jah":
-    try:
-        nr=int(input("Päeva number: "))
-        if nr==1:
-            p="esmaspäev"
-        elif nr==2:
-            p="teisipäev"
-        elif v==3:
-            p="kolmapäev"
-        elif nr==4:
-            p="neljapäev"
-        elif nr==5:
-            p="reede"
-        elif nr==6:
-            p="laupäev"
-        elif nr==7:
-            p="pühapäev"
-        else:
-            p="on vaja 1-7"
-        print(p)
-    except:
-        print("Viga")
+#from math import *
+#v=input("Kas tahad 1-7 numbrist saada päeva nimetus?")
+#if v.lower()=="jah":
+#    try:
+#        nr=int(input("Päeva number: "))
+#        if nr==1:
+#            p="esmaspäev"
+#        elif nr==2:
+#            p="teisipäev"
+#        elif v==3:
+#            p="kolmapäev"
+#        elif nr==4:
+#            p="neljapäev"
+#        elif nr==5:
+#            p="reede"
+#        elif nr==6:
+#            p="laupäev"
+#        elif nr==7:
+#            p="pühapäev"
+#        else:
+#            p="on vaja 1-7"
+#        print(p)
+#    except:
+#        print("Viga")
+
+

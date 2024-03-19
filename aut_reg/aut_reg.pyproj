@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>5a10725f-86ef-4143-a1a0-bca48978cc8f</ProjectGuid>
+    <ProjectGuid>a4299902-9751-44d3-8fe9-1dbd90ce6a0c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>praktiline_listid.py</StartupFile>
+    <StartupFile>aut_reg.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>pythonapp1</Name>
-    <RootNamespace>pythonapp1</RootNamespace>
+    <Name>aut_reg</Name>
+    <RootNamespace>aut_reg</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,13 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="mangkivipaber.py" />
-    <Compile Include="praktiline_listid.py" />
-    <Compile Include="newpraktilinetöö.py" />
-    <Compile Include="newtheme.py" />
-    <Compile Include="tsükkel.py" />
-    <Compile Include="ruutvõrand.py" />
-    <Compile Include="pythonapp1.py" />
+    <Compile Include="aut_reg.py" />
+    <Compile Include="minuomamodul.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
